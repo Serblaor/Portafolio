@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
+import Countries from "../../Assets/Projects/Countries-app.png";
 import OrionMusicX from "../../Assets/Projects/OrionMusicX.png";
 import RickAndMorty from "../../Assets/Projects/Rick-And-Morty-app.png";
 
@@ -54,12 +54,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Countries}
               isBlog={false}
-              title="Editor.io"
+              title="Countries-App"
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
               ghLink="#"
-              demoLink="#"              
+              demoLink="https://github.com/Serblaor/Proyecto-Individual"              
             />
           </Col>
         </Row>
