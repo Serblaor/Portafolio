@@ -57,7 +57,7 @@ function Projects() {
               imgPath={Countries}
               isBlog={false}
               title="Countries-App"
-              description="This application allows you to view information from different countries using the external api restcountries and you can:
+              description="This App allows you to view information from different countries using the external api restcountries and you can:
               Search countries
               Filter / Sort them
               Create a list of activities associated with the countries you visit or plan to visit. The Activities sections include:

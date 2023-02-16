@@ -6,11 +6,12 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Full-Stack Web Developer",
-          "HTML",
-          "CSS",
+          "Full-Stack Developer",
+          "Front-End & Back-End",
           "Javascript",
           "React",
+          "HTML",
+          "CSS",
           "Redux",
           "POSGRESQL",
           "Node.js",
