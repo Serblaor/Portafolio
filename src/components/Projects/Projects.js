@@ -57,7 +57,13 @@ function Projects() {
               imgPath={Countries}
               isBlog={false}
               title="Countries-App"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              description="This application allows you to view information from different countries using the external api restcountries and you can:
+              Search countries
+              Filter / Sort them
+              Create a list of activities associated with the countries you visit or plan to visit. The Activities sections include:
+              Creation form
+              Custom calendar
+              Section to view, filter and sort."
               ghLink="#"
               demoLink="https://github.com/Serblaor/Proyecto-Individual"              
             />
