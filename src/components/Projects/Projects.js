@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import Countries from "../../Assets/Projects/Countries-app.png";
 import OrionMusicX from "../../Assets/Projects/OrionMusicX.png";
 import RickAndMorty from "../../Assets/Projects/Rick-And-Morty-app.png";
+import ProyectoSmartBooking from "../../Assets/Projects/ProyectoSmartBooking.png"
 
 function Projects() {
   return (
@@ -17,7 +18,20 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ProyectoSmartBooking}
+              isBlog={false}
+              title="SmartBooking"
+              description="This project is a hotel reservation application, it uses a MERN Stack (MongoDB, Express, React and Node.JS)
+              For the administrator profile, the application allows creating a new hotel, assigning rooms to the hotel, modifying room values and hotel data, enabling or disabling hotels and rooms, and viewing reservations made in the hotels. Each room allows registering the base cost, taxes, and room type.
+              "
+              ghLink="https://github.com/Serblaor/smartFront"
+              demoLink="https://smart-front-sandy.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={OrionMusicX}
@@ -32,7 +46,7 @@ function Projects() {
               Shopping cart with PayPal,
               listen to previews of the beats and
               Like and dislike button"
-              ghLink="https://github.com/soumyajit4419/Chatify"
+              ghLink="https://github.com/Serblaor/OrionMusicX"
               demoLink="https://orion-proyect.web.app"
             />
           </Col>
