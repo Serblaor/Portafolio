@@ -6,6 +6,8 @@ import Countries from "../../Assets/Projects/Countries-app.png";
 import OrionMusicX from "../../Assets/Projects/OrionMusicX.png";
 import RickAndMorty from "../../Assets/Projects/Rick-And-Morty-app.png";
 import ProyectoSmartBooking from "../../Assets/Projects/ProyectoSmartBooking.png"
+import moviesbapp from "../../Assets/Projects/moviesbapp2.png"
+
 
 function Projects() {
   return (
@@ -18,16 +20,14 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
-        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ProyectoSmartBooking}
+              imgPath={moviesbapp}
               isBlog={false}
               title="MOVIESBAPP"
-              description="TMOVIESBAPP is a web application that allows users to search and discover movies and TV shows. Built with TypeScript, React, and Tailwind CSS, it provides a seamless user experience for exploring a vast database of content. The application offers advanced search capabilities, detailed information about movies and TV shows, including synopses, cast members, seasons, and genres. The modern and responsive design, powered by Tailwind CSS, ensures a visually appealing and user-friendly interface across different devices. 
-              Experience the power of TypeScript, React, and Tailwind CSS in MOVIESBAPP as you dive into the world of entertainment.
-              "
+              description="TMOVIESBAPP is a web application that allows users to search and discover movies and TV shows. Built with TypeScript, 
+              React, and Tailwind CSS, it provides a seamless user experience for exploring a vast database of content. The application offers advanced search capabilities, detailed information about movies and TV shows, including synopses, cast members, seasons, and genres.
               ghLink="https://github.com/Serblaor/MovieSBapp"
               demoLink="https://movie-s-bapp.vercel.app/"
             />
