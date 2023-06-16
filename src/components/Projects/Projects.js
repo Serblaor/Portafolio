@@ -26,7 +26,7 @@ function Projects() {
               imgPath={moviesbapp}
               isBlog={false}
               title="MOVIESBAPP"
-              description="TMOVIESBAPP is a web application that allows users to search and discover movies and TV shows. Built with TypeScript, 
+              description="TMOVIESBAPP is a web application that allows users to search and discover movies and TV shows. Built with TypeScript,
               React, and Tailwind CSS, it provides a seamless user experience for exploring a vast database of content. The application offers advanced search capabilities, detailed information about movies and TV shows, including synopses, cast members, seasons, and genres.
               ghLink="https://github.com/Serblaor/MovieSBapp"
               demoLink="https://movie-s-bapp.vercel.app/"
