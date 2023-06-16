@@ -24,6 +24,18 @@ function Projects() {
             <ProjectCard
               imgPath={ProyectoSmartBooking}
               isBlog={false}
+              title="MOVIESBAPP"
+              description="TMOVIESBAPP is a web application that allows users to search and discover movies and TV shows. Built with TypeScript, React, and Tailwind CSS, it provides a seamless user experience for exploring a vast database of content. The application offers advanced search capabilities, detailed information about movies and TV shows, including synopses, cast members, seasons, and genres. The modern and responsive design, powered by Tailwind CSS, ensures a visually appealing and user-friendly interface across different devices. 
+              Experience the power of TypeScript, React, and Tailwind CSS in MOVIESBAPP as you dive into the world of entertainment.
+              "
+              ghLink="https://github.com/Serblaor/MovieSBapp"
+              demoLink="https://movie-s-bapp.vercel.app/"
+            />
+          </Col>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ProyectoSmartBooking}
+              isBlog={false}
               title="SmartBooking"
               description="This project is a hotel reservation application, it uses a MERN Stack (MongoDB, Express, React and Node.JS)
               For the administrator profile, the application allows creating a new hotel, assigning rooms to the hotel, modifying room values and hotel data, enabling or disabling hotels and rooms, and viewing reservations made in the hotels. Each room allows registering the base cost, taxes, and room type.
