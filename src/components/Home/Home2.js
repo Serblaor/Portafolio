@@ -1,16 +1,34 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ftd from "../../Assets/Projects/Foto4.jpeg";
-
-import Tilt from "react-parallax-tilt";
+import React, { useState } from "react";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Tilt from "react-parallax-tilt";
+import ftd from "../../Assets/Projects/Foto4.jpeg";
+import "../style/Home2.css";
 
 function Home2() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Aquí puedes agregar la lógica para enviar el formulario
+    console.log("Formulario enviado:", formData);
+  };
   return (
+    
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
@@ -97,6 +115,53 @@ function Home2() {
             </ul>
           </Col>
         </Row>
+        <br/>
+        <Row>
+        <Col md={12} className="contact-form">
+          <Form onSubmit={handleSubmit} className="contact-form">
+            <Form.Group controlId="formName">
+              <h2 className="purple">Name</h2>
+              <Form.Control
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+                className="white-text input-transparent"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formEmail">
+              <h2 className="purple">Email</h2>
+              <Form.Control
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                className="white-text input-transparent"
+              />
+            </Form.Group>
+
+            <Form.Group controlId="formMessage">
+              <h2 className="purple">Message</h2>
+              <Form.Control
+                as="textarea"
+                rows={4}
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                className="white-text input-transparent"
+              />
+            </Form.Group>
+
+            <Button variant="primary" type="submit">
+              SUBMIT
+            </Button>
+          </Form>
+        </Col>
+      </Row>
       </Container>
     </Container>
   );

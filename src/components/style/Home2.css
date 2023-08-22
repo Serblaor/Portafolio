@@ -1,0 +1,33 @@
+/* Estilo para hacer el texto blanco */
+.white-text {
+    color: white;
+  }
+  
+  /* Estilo para hacer los campos de entrada transparentes */
+  .input-transparent {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  
+  /* Ajuste de ancho para los campos de entrada */
+  .input-transparent,
+  .button-transparent {
+    width: 100%; /* Puedes ajustar este valor según tus preferencias */
+  }
+  
+  /* Estilo para hacer el botón transparente */
+  .button-transparent {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  /* Estilo para centrar el botón en el formulario */
+  .contact-form .button-transparent {
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
