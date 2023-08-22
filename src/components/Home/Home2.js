@@ -12,6 +12,9 @@ function Home2() {
     email: "",
     message: "",
   });
+
+  const [submitted, setSubmitted] = useState(false); // Nuevo estado para controlar el mensaje de confirmación
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -19,10 +22,17 @@ function Home2() {
       [name]: value,
     }));
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Aquí puedes agregar la lógica para enviar el formulario
     console.log("Formulario enviado:", formData);
+    setSubmitted(true); // Marcar que se ha enviado el formulario
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    }); // Limpiar los campos
   };
   return (
     <Container fluid className="home-about-section" id="about">
@@ -166,6 +176,11 @@ function Home2() {
                 </Button>
               </Form.Group>
             </Form>
+            {submitted && ( // Mostrar mensaje de confirmación si se ha enviado el formulario
+              <p className="confirmation-message">
+                Thank you for your message!</p>
+              
+            )}
           </Col>
         </Row>
       </Container>
