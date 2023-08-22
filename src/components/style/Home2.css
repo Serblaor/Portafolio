@@ -1,5 +1,14 @@
-/* Estilo para hacer el texto blanco */
-.white-text {
+/* Estilos para el formulario de contacto */
+.contact-form {
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para hacer el texto blanco */
+  .white-text {
     color: white;
   }
   
@@ -8,12 +17,8 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
-  }
-  
-  /* Ajuste de ancho para los campos de entrada */
-  .input-transparent,
-  .button-transparent {
-    width: 100%; /* Puedes ajustar este valor según tus preferencias */
+    color: white;
+    margin-bottom: 10px;
   }
   
   /* Estilo para hacer el botón transparente */
@@ -21,13 +26,12 @@
     background-color: transparent;
     color: white;
     border: 1px solid white;
+    width: 100%;
+    margin-top: 10px;
   }
   
   /* Estilo para centrar el botón en el formulario */
-  .contact-form .button-transparent {
-    margin-top: 1rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .button-container {
+    text-align: center;
   }
   
